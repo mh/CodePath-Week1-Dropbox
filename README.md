@@ -1,8 +1,7 @@
 # CodePath-Week1-Dropbox
-CodePath Week 1 Assignment
+CodePath Week 1 Assignment: Dropbox
 
-
-This is the Tip Calculator for the CodePath application. See the tutorial video for how to make your own [Tip Calculator in Swift](https://vimeo.com/102084767). Apply for the iOS for Designers CodePath course here: http://codepath.com/iosfordesigners.
+This is the CodePath for iOS Designers course, weeek 1 assignment for the Dropbox application. Apply for the iOS for Designers CodePath course here: http://codepath.com/iosfordesigners.
 
 + Time Spent: 10.5 hours
 
