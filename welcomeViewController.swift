@@ -1,23 +1,17 @@
 //
-//  photosViewController.swift
+//  welcomeViewController.swift
 //  dropbox
 //
-//  Created by matt hunter on 9/19/15.
+//  Created by matt hunter on 9/21/15.
 //  Copyright © 2015 mh. All rights reserved.
 //
 
 import UIKit
 
-class photosViewController: UIViewController {
+class welcomeViewController: UIViewController {
 
-    @IBOutlet weak var photosImageView: UIImageView!
-    @IBOutlet weak var photosScrollView: UIScrollView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        photosScrollView.contentSize = CGSize(width: 375, height: 1000)
-        photosScrollView.contentSize = photosImageView.bounds.size // photosImageView.image!.size
 
         // Do any additional setup after loading the view.
     }

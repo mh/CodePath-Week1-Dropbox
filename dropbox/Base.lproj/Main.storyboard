@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2nu-SW-kdZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="41K-IR-wnX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--welcomeView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="welcomeViewController" title="welcomeView" id="BYZ-38-t0r" customClass="welcomeViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,6 +34,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="471.5" y="623.5"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="VzQ-Iy-3MR">
+            <objects>
+                <viewController id="Dq0-hP-Q2E" customClass="welcomeViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s9W-6f-WAL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" id="FiO-9g-9Yb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome" id="0J9-Fb-oi1">
+                                        <rect key="frame" x="-375" y="0.0" width="1125" height="667"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <animations/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="welcomeImageView" destination="0J9-Fb-oi1" id="2tF-W3-RVe"/>
+                        <outlet property="welcomeScrollView" destination="FiO-9g-9Yb" id="4om-Zr-HU7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lar-AV-1zS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471.5" y="1392.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PDu-zE-tRT">
@@ -388,7 +422,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="empty_files" id="4dm-kA-mw1">
-                                <rect key="frame" x="-1" y="65" width="377" height="536"/>
+                                <rect key="frame" x="0.0" y="60" width="377" height="536"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
@@ -413,7 +447,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="empty_photos" id="blZ-u5-olz">
-                                <rect key="frame" x="0.0" y="67" width="376" height="534"/>
+                                <rect key="frame" x="0.0" y="60" width="376" height="534"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
@@ -438,7 +472,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="empty_favorites" id="v90-vm-XOq">
-                                <rect key="frame" x="0.0" y="67" width="375" height="533"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="533"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
@@ -452,77 +486,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iE-m7-chg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5975.5" y="3022.5"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="zUi-uC-Bvz">
-            <objects>
-                <viewController title="Settings" id="Idj-Qg-JMg" customClass="settingsViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Cio-Ck-mAl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="PHN-vj-gNj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="614"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="settings" id="Yai-S9-Wl2">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="902"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
-                                        <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    </imageView>
-                                </subviews>
-                                <animations/>
-                            </scrollView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Settings" id="fLH-ET-hCN"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="settingsImageView" destination="Yai-S9-Wl2" id="O6c-sS-kKG"/>
-                        <outlet property="settingsScrollView" destination="PHN-vj-gNj" id="QND-hc-qi3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1dZ-xQ-W69" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6544.5" y="3022.5"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="PR8-Fb-i8d">
-            <objects>
-                <viewController title="Settings" id="EYx-h7-TH7" customClass="settingsScrollViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Nzr-Wu-TRR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="2Da-D3-IQD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="settings" id="yh0-YM-1wu">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="904"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
-                                    </imageView>
-                                </subviews>
-                                <animations/>
-                            </scrollView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="settingsScrollview" destination="yh0-YM-1wu" id="DMn-WY-5wN"/>
-                        <outlet property="settingsTakeScroll" destination="2Da-D3-IQD" id="HM6-dC-Dgu"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u4O-tX-4Zv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7031.5" y="3042.5"/>
         </scene>
         <!--TOS-->
         <scene sceneID="Fgk-vE-dbM">
@@ -657,7 +620,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Idj-Qg-JMg" kind="relationship" relationship="rootViewController" id="eNT-ef-LoI"/>
+                        <segue destination="J9d-N8-WLY" kind="relationship" relationship="rootViewController" id="Al8-K4-9bx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOB-JJ-SMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -673,7 +636,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="existing_files" id="34f-bp-Y2u">
-                                <rect key="frame" x="-1" y="45" width="377" height="536"/>
+                                <rect key="frame" x="0.0" y="60" width="377" height="536"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -733,7 +696,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="empty_favorites" id="g3I-Hu-tlO">
-                                <rect key="frame" x="0.0" y="67" width="375" height="533"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="533"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
@@ -766,6 +729,14 @@
                                         <animations/>
                                         <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="33C-B7-xgy">
+                                        <rect key="frame" x="0.0" y="809" width="374" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <connections>
+                                            <action selector="signOutAction:" destination="NqA-yD-0lQ" eventType="touchUpInside" id="eAl-vn-0zK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <animations/>
                             </scrollView>
@@ -778,6 +749,7 @@
                     <connections>
                         <outlet property="settingsImageView" destination="Bav-AP-wJQ" id="sTt-GQ-278"/>
                         <outlet property="settingsScrollView" destination="Qkk-Oq-f58" id="Zzu-aC-MjK"/>
+                        <outlet property="signoutButton" destination="33C-B7-xgy" id="QEL-eZ-YJ1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JB3-P3-izN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -962,6 +934,51 @@
             </objects>
             <point key="canvasLocation" x="2825.5" y="1497.5"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="KUr-hH-czP">
+            <objects>
+                <viewController title="Settings" id="J9d-N8-WLY" customClass="settingsViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ytv-ga-YKg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="B0o-ft-QZe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="settings" id="z2Y-ee-NHy">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="902"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kB3-eq-UYE">
+                                        <rect key="frame" x="0.0" y="809" width="374" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <connections>
+                                            <action selector="signOutAction:" destination="J9d-N8-WLY" eventType="touchUpInside" id="vhm-PX-07o"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="h1u-6z-yad"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="settingsImageView" destination="z2Y-ee-NHy" id="ysZ-BN-CWZ"/>
+                        <outlet property="settingsScrollView" destination="B0o-ft-QZe" id="umW-oa-fD9"/>
+                        <outlet property="signoutButton" destination="kB3-eq-UYE" id="R9D-7c-9qP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNv-yO-tBN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6544.5" y="3022.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="create1" width="320" height="568"/>
@@ -983,6 +1000,7 @@
         <image name="settings_tab" width="30" height="30"/>
         <image name="sign_in2" width="320" height="568"/>
         <image name="terms" width="320" height="568"/>
+        <image name="welcome" width="1125" height="667"/>
         <image name="welcome1" width="320" height="568"/>
         <image name="welcome2" width="320" height="568"/>
         <image name="welcome3" width="320" height="568"/>

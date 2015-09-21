@@ -18,6 +18,7 @@
 		EC1EC3951BAC8FE4005A4617 /* dropboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1EC3941BAC8FE4005A4617 /* dropboxUITests.swift */; };
 		EC5DA4101BAF7FD800CE80AD /* termsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5DA40F1BAF7FD800CE80AD /* termsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		EC5DA4181BAF986900CE80AD /* signin2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5DA4171BAF986900CE80AD /* signin2ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EC612A3A1BAFE7DC003A999D /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC612A391BAFE7DC003A999D /* welcomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		EC1EC3961BAC8FE4005A4617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC5DA40F1BAF7FD800CE80AD /* termsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = termsViewController.swift; sourceTree = "<group>"; };
 		EC5DA4171BAF986900CE80AD /* signin2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signin2ViewController.swift; sourceTree = "<group>"; };
+		EC612A391BAFE7DC003A999D /* welcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = welcomeViewController.swift; path = ../welcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		EC1EC3731BAC8FE3005A4617 /* dropbox */ = {
 			isa = PBXGroup;
 			children = (
+				EC612A391BAFE7DC003A999D /* welcomeViewController.swift */,
 				EC1EC3741BAC8FE3005A4617 /* AppDelegate.swift */,
 				EC1EC3761BAC8FE3005A4617 /* ViewController.swift */,
 				EC1EC3781BAC8FE3005A4617 /* Main.storyboard */,
@@ -273,6 +276,7 @@
 				EC13B0361BAE23400077C950 /* photosViewController.swift in Sources */,
 				EC1EC3751BAC8FE3005A4617 /* AppDelegate.swift in Sources */,
 				EC13B0341BAE17D40077C950 /* settingsViewController.swift in Sources */,
+				EC612A3A1BAFE7DC003A999D /* welcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
