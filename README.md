@@ -5,6 +5,8 @@ This is the CodePath for iOS Designers course, weeek 1 assignment for the Dropbo
 
 + Time Spent: 10.5 hours
 
+Notes: I spent extra time learning UIAlertController to leverage an action sheet instead of the screenshot. 
+
 ## Completed User Stories
 + *[x] User can tap through the 3 welcome screens.
 + *[x] User can follow the create user flow.
@@ -17,7 +19,7 @@ This is the CodePath for iOS Designers course, weeek 1 assignment for the Dropbo
 + *[x] User can log out from the Settings screen.
 + *[ ] Optional: Add a detail view for one of the files and implement favoriting the file.
 + *[x] Optional: Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard.
-+ *[x] Optional: You should be able to swipe through the welcome screens instead of just tapping them.
++ *[ ] Optional: You should be able to swipe through the welcome screens instead of just tapping them.
 + *[x] Extra: Added UIAlertController to use an action sheet on Sign In screen
 
 
