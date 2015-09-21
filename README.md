@@ -22,8 +22,7 @@ Notes: I spent extra time learning UIAlertController to leverage an action sheet
 + *[ ] Optional: You should be able to swipe through the welcome screens instead of just tapping them.
 + *[x] Extra: Added UIAlertController to use an action sheet on Sign In screen
 
-
 ## Walkthrough of user stories
-![Video Walkthrough](dropbox-mh.gif)
+![Video Walkthrough](mh-dropbox.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
